@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App /> snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="App"
+  >
+    <header
+      class="App-header"
+    >
+      <img
+        alt="logo"
+        src="https://logos-download.com/wp-content/uploads/2016/09/Star_Wars_logo-1.png"
+        width="300"
+      />
+    </header>
+    <div>
+      <div />
+      <div />
+      <div
+        class="buttons"
+      >
+        <button
+          data-testid="prev"
+        >
+          Previous
+        </button>
+        <button
+          data-testid="next"
+        >
+          Next
+        </button>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
