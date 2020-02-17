@@ -36,4 +36,16 @@ test('Is the logo there?', () => {
     expect(element).toBeVisible();
 })
 
+test("<App /> snapshot", async () => {
+    const wrapper = rtl.render(<App />)
+    await wrapper.findAllByAltText(/logo/i);
+    expect(wrapper.asFragment()).toMatchSnapshot()
+})
+
+test("Made API call", async () => {
+    const wrapper = rtl.render(<App />);
+    await wrapper.findAllByAltText(/logo/i);
+    expect(axios.get).toHaveBeenCalled()
+})
+
 
